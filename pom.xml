@@ -22,7 +22,10 @@
 
     <modules>
         <module>lavender-gateway</module>
+        <module>lavender-eureka</module>
+        <module>lavender-service-provider</module>
     </modules>
+
 
     <dependencyManagement>
         <dependencies>

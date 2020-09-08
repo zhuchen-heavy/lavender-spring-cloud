@@ -9,38 +9,13 @@
     </parent>
 
     <modelVersion>4.0.0</modelVersion>
-    <artifactId>lavender-gateway</artifactId>
+    <artifactId>lavender-eureka</artifactId>
 
     <dependencies>
 
-        <!--
-            与spring-boot-starter-web的包不能共存
-            底层基于netty的reactive的响应式编程
-        -->
         <dependency>
             <groupId>org.springframework.cloud</groupId>
-            <artifactId>spring-cloud-starter-gateway</artifactId>
-        </dependency>
-
-        <dependency>
-            <groupId>org.springframework.cloud</groupId>
-            <artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>
-        </dependency>
-
-        <!--
-            gateway限流引入的Redis的依赖包
-        -->
-        <!--<dependency>-->
-            <!--<groupId>org.springframework.boot</groupId>-->
-            <!--<artifactId>spring-boot-starter-data-redis-reactive</artifactId>-->
-        <!--</dependency>-->
-
-        <!--
-            gateway熔断引入的hystrix的依赖包
-        -->
-        <dependency>
-            <groupId>org.springframework.cloud</groupId>
-            <artifactId>spring-cloud-starter-netflix-hystrix</artifactId>
+            <artifactId>spring-cloud-starter-netflix-eureka-server</artifactId>
         </dependency>
 
         <dependency>
@@ -54,7 +29,6 @@
                 </exclusion>
             </exclusions>
         </dependency>
-
     </dependencies>
 
     <build>
