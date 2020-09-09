@@ -28,4 +28,12 @@ public class TestController {
         return "Hello " + name + " , i am from port : " + port;
     }
 
+    /**
+     * http://localhost:8082/dynamic
+     */
+    @GetMapping("/dynamic")
+    public String dynamic(){
+        return "dynamic";
+    }
+
 }

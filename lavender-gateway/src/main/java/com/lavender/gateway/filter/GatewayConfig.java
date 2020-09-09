@@ -1,5 +1,6 @@
 package com.lavender.gateway.filter;
 
+import com.lavender.gateway.controller.TestController;
 import org.springframework.cloud.gateway.route.RouteLocator;
 import org.springframework.cloud.gateway.route.builder.RouteLocatorBuilder;
 
@@ -20,7 +21,7 @@ public class GatewayConfig {
      * <p>
      * test 1：参考：https://blog.csdn.net/forezp/article/details/83792388
      * 以JavaBean的方式来定义RouteLocator，等待于 application.yml 中的配置
-     * {@link com.lavender.gateway.TestController}
+     * {@link TestController}
      * </p>
      *
      * @author: zhu.chen
