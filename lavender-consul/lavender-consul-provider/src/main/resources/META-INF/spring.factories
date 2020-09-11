@@ -1,0 +1,3 @@
+# Auto Configuration ---> spring boot2.1.3.RELEASE的jar包中spring.factories中有相关ApplicationListener和EnvironmentPostProcessor的实现。
+#org.springframework.boot.env.EnvironmentPostProcessor=com.example.springclouddemo.TestEnvironmentPostPropcessor
+#org.springframework.context.ApplicationListener=com.example.springclouddemo.TestListener

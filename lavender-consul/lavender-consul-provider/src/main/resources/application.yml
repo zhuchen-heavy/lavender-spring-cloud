@@ -1,0 +1,20 @@
+server:
+  port: 8085
+spring:
+  application:
+    name: lavender-consul-provider
+  cloud:
+    consul:
+      host: localhost
+      port: 8500
+      discovery:
+        service-name: lavender-consul-provider
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*' # yml配置需要加单引号；properties配置直接用 * 即可。
+  endpoint:
+    health:
+      show-details: always

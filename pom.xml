@@ -26,6 +26,8 @@
         <module>lavender-eureka</module>
         <module>lavender-service-provider</module>
         <module>lavender-nacos</module>
+        <!-- consol -->
+        <module>lavender-consul</module>
     </modules>
 
     <dependencyManagement>
