@@ -1,0 +1,6 @@
+spring:
+  cloud:
+    config:
+      name: zhuchen #配置文件的文件名
+      uri: http://localhost:8081 #server端路由
+      profile: dev #配置文件的环境级别

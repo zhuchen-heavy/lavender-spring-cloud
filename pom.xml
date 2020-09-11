@@ -22,12 +22,16 @@
     </properties>
 
     <modules>
+        <!-- spring cloud gateway -->
         <module>lavender-gateway</module>
-        <module>lavender-eureka</module>
-        <module>lavender-service-provider</module>
+        <!-- nacos -->
         <module>lavender-nacos</module>
         <!-- consol -->
         <module>lavender-consul</module>
+        <!-- prometheus -->
+        <module>lavender-prometheus</module>
+        <!-- spring cloud config -->
+        <module>lavender-config</module>
     </modules>
 
     <dependencyManagement>

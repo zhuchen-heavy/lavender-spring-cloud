@@ -20,30 +20,57 @@ Nacos可以做配置中心和注册中心。
 1：[consul GitHub官网](https://github.com/hashicorp/consul)  
 2：[consul 文档官网](https://www.consul.io/docs)
 
-### 熔断
+### 4：熔断
 #### spring cloud netflix hystrix
 1：[Hystrix源码解析](http://www.iocoder.cn/categories/Hystrix/?self)
 
-### 监控
-#### spring boot actuator
+### 5：监控
+#### 1：spring boot actuator
 1：[actuator暴露端点原理解析](http://www.iocoder.cn/Spring-Boot/battcn/v2-actuator-introduce/)  
+#### 2：prometheus + grafana
+1：[prometheus Github官网](https://github.com/prometheus/prometheus)  
+2：[prometheus 文档官网](https://prometheus.io/)  
+3：[Windows安装prometheus](https://blog.csdn.net/lht3347/article/details/84144999)   
+4：[grafana Github官网](https://github.com/grafana/grafana)  
+5：[grafana 文档官网](https://grafana.com/grafana/)  
+6：[Windows安装grafana](https://segmentfault.com/a/1190000016234162)    
+7：[spring cloud + actuator + prometheus + grafana示例](https://segmentfault.com/a/1190000021430295)  
 
 ### 二. project module描述
-#### lavender-eureka
-eureka的服务端，端口为8080。
+#### 1：lavender-gateway
+```
+1：lavender-eureka
+eureka的服务端，端口：8080。
 
-#### lavender-gateway
-服务网关，端口为8081。
+2：lavender-cloud-gateway
+服务网关，端口：8081。
 
-#### lavender-service-provider
-服务提供者，端口为8082。
+3：lavender-service-provider
+服务提供者，端口：8082。
+```
 
-#### lavender-nacos
-配置中心，端口为8083。
+#### 2：lavender-nacos
+```
+配置中心，端口：8083。
+```
 
-#### lavender-consul
-consul的注册中心测试
-###### 1：lavender-consul-consumer
-基于consul的服务消费者，端口：8084
-###### 2： lavender-consul-provider
-基于consul的服务提供者，端口：8085
+#### 3：lavender-consul
+```
+1：lavender-consul-consumer
+基于consul的服务消费者，端口：8084。
+
+2： lavender-consul-provider
+基于consul的服务提供者，端口：8085。
+```
+
+#### 4：lavender-prometheus
+```
+监控，端口：8086。
+```
+#### 5：lavender-config
+```
+1：lavender-config-client
+基于spring-cloud-config的client，端口：8087。
+2：lavender-config-server
+基于spring-cloud-server的server，端口：8088。
+```

@@ -9,13 +9,12 @@
     </parent>
 
     <modelVersion>4.0.0</modelVersion>
-    <artifactId>lavender-gateway</artifactId>
+    <artifactId>lavender-config</artifactId>
     <packaging>pom</packaging>
 
     <modules>
-        <module>lavender-cloud-gateway</module>
-        <module>lavender-eureka</module>
-        <module>lavender-service-provider</module>
+        <module>lavender-config-client</module>
+        <module>lavender-config-server</module>
     </modules>
 
 </project>
