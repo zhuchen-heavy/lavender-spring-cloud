@@ -1,0 +1,17 @@
+server:
+  port: 8086
+spring:
+  application:
+    name: lavender-prometheus
+management:
+  endpoints:
+    web:
+      exposure:
+        # spring boot 2.0默认不开放prometheus端点，需要自行开放。
+        # http://localhost:8086/actuator/prometheus：监控端点信息
+        include: 'prometheus'
+  metrics:
+    tags:
+      application: ${spring.application.name}
+
+

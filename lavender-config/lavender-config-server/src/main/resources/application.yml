@@ -1,5 +1,5 @@
 server:
-  port: 8087
+  port: 8088
 
 spring:
   application:
@@ -7,10 +7,14 @@ spring:
   cloud:
     config:
       server:
-        git:
-          uri: https://github.com/zhuchen-heavy/lavender-spring-cloud.git
-          search-paths: data
-          username: 834434471@qq.com
-          password: Zc940309
-      label: master
+        native:
+          search-locations: file:C:/Users/zhuchen8/Desktop/conf #由于git比较麻烦，因此使用本地的文件来进行模拟，需要在桌面的conf文件下加一个zhuchen-dev.properties文件来进行模拟
+          # 访问配置路径：http://localhost:8081/zhuchen/dev 。 直接获取配置文件中的内容：http://localhost:8081/zhuchen-dev.properties
+  profiles:
+    active: native #本地文件
 
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'

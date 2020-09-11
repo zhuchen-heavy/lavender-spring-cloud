@@ -7,8 +7,9 @@ import org.springframework.cloud.config.server.EnableConfigServer;
 /**
  * <p>
  *  spring cloud config server端
+ *  博客地址：https://blog.csdn.net/forezp/article/details/70037291
  * </p>
- *
+ *  直接访问资源：http://localhost:8087/addredd-dev.properties
  * @author: zhu.chen
  * @date: 2020/9/11
  * @version: v1.0.0
