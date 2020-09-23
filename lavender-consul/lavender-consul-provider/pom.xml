@@ -5,7 +5,7 @@
     <parent>
         <groupId>com.lavender</groupId>
         <artifactId>lavender-consul</artifactId>
-        <version>1.0.0</version>
+        <version>${lavender-propject.version}</version>
     </parent>
 
     <modelVersion>4.0.0</modelVersion>

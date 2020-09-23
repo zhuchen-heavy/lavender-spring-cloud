@@ -5,7 +5,13 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 /**
  * <p>
- *  基于nacos的配置中心
+ * 基于nacos的配置中心
+ * <h>
+ * nacos首页：http://127.0.0.1:8848/nacos/index.html
+ * 账号：nacos
+ * 密码：nacos
+ * </h>
+ *
  * </p>
  *
  * @author: zhu.chen

@@ -36,6 +36,11 @@ Nacos可以做配置中心和注册中心。
 6：[Windows安装grafana](https://segmentfault.com/a/1190000016234162)    
 7：[spring cloud + actuator + prometheus + grafana示例](https://segmentfault.com/a/1190000021430295)  
 
+### 6：Http客户端工具
+#### 1：Spring Cloud OpenFeign
+1：[spring-cloud-openfeign Github官网](https://github.com/OpenFeign/feign)  
+2：[spring-cloud-openfeign 文档官网](https://docs.spring.io/spring-cloud-openfeign/docs/2.2.5.RELEASE/reference/html/)    
+
 ### 二. project module描述
 #### 1：lavender-gateway
 ```
@@ -51,7 +56,14 @@ eureka的服务端，端口：8080。
 
 #### 2：lavender-nacos
 ```
-配置中心，端口：8083。
+1：lavender-nacos-config
+基于nacos的配置中心，端口：8083。
+1：lavender-nacos-discovery
+A：lavender-nacos-discovery-consumer
+基于nacos的注册中心，端口：8089。
+B：lavender-nacos-discovery-provider
+基于nacos的注册中心，端口：8090。
+
 ```
 
 #### 3：lavender-consul
@@ -74,3 +86,7 @@ eureka的服务端，端口：8080。
 2：lavender-config-server
 基于spring-cloud-server的server，端口：8088。
 ```
+
+
+## 三：Spring Cloud系列博客
+[oschina-1](https://my.oschina.net/13426421702?tab=newest&catalogId=6488687)
