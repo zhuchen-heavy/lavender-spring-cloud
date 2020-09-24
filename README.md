@@ -61,8 +61,10 @@ eureka的服务端，端口：8080。
 1：lavender-nacos-discovery
 A：lavender-nacos-discovery-consumer
 基于nacos的注册中心，端口：8089。
-B：lavender-nacos-discovery-provider
+B：lavender-nacos-discovery-provider-1
 基于nacos的注册中心，端口：8090。
+C：lavender-nacos-discovery-provider-2
+基于nacos的注册中心，端口：8091。
 
 ```
 
