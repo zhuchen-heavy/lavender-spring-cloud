@@ -42,6 +42,7 @@ public class ConsumerController {
 
     /**
      * http://localhost:8089/call
+     *
      * @return
      */
     @RequestMapping("/call")
@@ -50,20 +51,21 @@ public class ConsumerController {
         System.out.println("服务地址：" + serviceInstance.getUri());
         System.out.println("服务名称：" + serviceInstance.getServiceId());
 
-        String callServiceResult = new RestTemplate().getForObject(serviceInstance.getUri().toString() + "/provider1", String.class);
+        String callServiceResult = new RestTemplate().getForObject(serviceInstance.getUri().toString() + "/provider", String.class);
         System.out.println(callServiceResult);
         return callServiceResult;
     }
 
     /**
      * http://localhost:8089/hello
+     *
      * @return
      */
     @GetMapping("/hello")
     public String hello() {
         String result1 = providerFeignClient.consumer1();
-        String result2 = providerFeignClient.consumer2();
-        return result1 + " : " + result2;
+        //String result2 = providerFeignClient.consumer2();
+        return result1;
     }
 
 }

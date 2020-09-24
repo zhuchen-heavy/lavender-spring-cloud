@@ -15,14 +15,9 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class ProviderController {
 
-    @RequestMapping("/provider1")
+    @RequestMapping("/provider")
     public String provider1() {
         return "hello nacos provider1";
-    }
-
-    @RequestMapping("/provider2")
-    public String provider2() {
-        return "hello nacos provider2";
     }
 
 }

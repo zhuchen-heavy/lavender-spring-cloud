@@ -15,7 +15,8 @@
 
     <modules>
         <module>lavender-nacos-discovery-consumer</module>
-        <module>lavender-nacos-discovery-provider</module>
+        <module>lavender-nacos-discovery-provider-1</module>
+        <module>lavender-nacos-discovery-provider-2</module>
     </modules>
 
 </project>

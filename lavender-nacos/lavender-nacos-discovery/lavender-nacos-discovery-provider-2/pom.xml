@@ -10,7 +10,7 @@
     </parent>
 
     <modelVersion>4.0.0</modelVersion>
-    <artifactId>lavender-nacos-discovery-provider</artifactId>
+    <artifactId>lavender-nacos-discovery-provider-2</artifactId>
 
     <dependencies>
 
@@ -23,7 +23,6 @@
         <dependency>
             <groupId>com.alibaba.cloud</groupId>
             <artifactId>spring-cloud-starter-alibaba-nacos-discovery</artifactId>
-            <version>2.2.1.RELEASE</version>
         </dependency>
 
         <!-- 健康检查依赖包，供consul服务端调用，若不依赖，则consul界面上显示本服务异常 -->

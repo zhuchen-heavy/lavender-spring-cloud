@@ -1,0 +1,18 @@
+server:
+  port: 8091
+spring:
+  application:
+    name: lavender-nacos-discovery-provider
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 127.0.0.1:8848
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*' # yml配置需要加单引号；properties配置直接用 * 即可。
+  endpoint:
+    health:
+      show-details: always

@@ -18,12 +18,8 @@ import org.springframework.web.bind.annotation.ResponseBody;
 @FeignClient("lavender-nacos-discovery-provider")
 public interface ProviderFeignClient {
 
-    @GetMapping("/provider1")
+    @GetMapping("/provider")
     @ResponseBody
     String consumer1();
-
-    @GetMapping("/provider2")
-    @ResponseBody
-    String consumer2();
 
 }
