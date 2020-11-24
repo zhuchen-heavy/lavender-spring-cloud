@@ -11,7 +11,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
  * 账号：nacos
  * 密码：nacos
  * </h>
- *
+ * windows环境搭建nacos集群：https://www.jianshu.com/p/a26e0b36ea31
  * </p>
  *
  * @author: zhu.chen
